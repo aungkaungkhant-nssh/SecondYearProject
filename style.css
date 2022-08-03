@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,9 +8,12 @@
 }
 h1 {
     display: block;
-    font-size: 2em;
+    font-size: 4rem;
   
     font-weight: bold;
+}
+h3{
+    font-size: 2.4rem;
 }
 a{
     text-decoration: none;
@@ -20,11 +24,20 @@ ul{
 li{
     list-style: none;
 }
-
+.w-40{
+    width: 40%;
+}
+.w-70{
+    width: 70%;
+}
 nav{
     width: 100%;
     background-color: white;
-    box-shadow: 0 .25rem .25rem rgba(0,0,0,.075);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 100;
 }
 .d-flex{
     display: flex;
@@ -45,7 +58,52 @@ nav{
 .p-3{
     padding: .8rem;
 }
+.mt-3{
+    margin-top: 30px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mt-1{
+    margin-top: 10px;
+}
+.btn{
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn.btn-primary{
+    background-color: #e6c073 ;
+    color: #fff;
+    transition: all .5s;
+}
+.btn.btn.btn-primary:hover{
+    border: 1px solid #e6c073 ;
+    color: #000;
+    background-color: #fff;
+}
+.section-title{
+    font-weight: normal;
+    border-bottom:1px solid #575151 ;
+    width: 300px;
+    margin: 0px auto;
+    padding-bottom: .6rem;
+}
+.text-center{
+    text-align: center;
+}
+.card{
+    background-color: white;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
+    padding: 1rem;
+    border-radius: 10px;
+}
 /* navigation */
+nav .logo{
+    width: 60px;
+    height: 60px;
+}
 li.nav-item{
     list-style: none;
     display: inline;
@@ -60,3 +118,45 @@ li.nav-item .nav-link.active{
     border-bottom: 2px solid red;
     padding-bottom:.6rem;
 }
+
+/* //banner */
+.banner{
+    /* background-color: #e6c073; */
+    background-image: url("https://wallpapercave.com/wp/wp3265995.jpg");
+    height: 100vh;
+    background-position: center;
+}
+.banner img{
+    width: 300px;
+    height: 247px;
+    border-radius: 50%;
+    margin-right: 100px;
+}
+.liquor-title{
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+}
+.banner-para{
+    margin-top: 1rem;
+    color: #bfafaf;
+}
+
+/* feature-products */
+.feature-products{
+    background-color: #e6c073;
+    height: 100vh;
+    padding: 1rem;
+}
+.feature-products .price{
+    font-size: .9rem;
+    color: #575151;
+   
+}
+.feature-products .card{
+    transition: all .5s;
+}
+.feature-products .card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
