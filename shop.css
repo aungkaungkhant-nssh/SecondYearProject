@@ -1,0 +1,48 @@
+.shop{
+
+}
+.shop .card{
+    transition: all .5s;
+}
+.shop .card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.shop .product-lists{
+    background-color: #eda61a;
+    width: 100%;
+    height: 100%;
+}
+.shop .product-lists .card{
+    width: 14rem;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+.shop .product-lists-container{
+    height: 530px;
+    overflow-y: scroll;
+}
+.shop .product-lists-container::-webkit-scrollbar {
+    display: none;
+}
+.shop .categories{
+    
+}
+.shop .categories ul{
+    padding: 2.5rem;
+}
+.shop .categories ul li{
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    
+    color: #a19d9d;
+    text-align: center;
+
+}
+.shop .categories ul li.active{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #ccc;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
+}
