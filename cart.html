@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--  start navigation bar -->
+    <nav>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <div>
+                    <img src="./images/logo.jpg" alt="" class="logo">
+                </div>
+                <div>
+                    <ul>
+                        <li  class="nav-item">
+                            <a href="/" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/" class="nav-link">Contact</a>
+                        </li>
+                        
+                        <li class="nav-item"> 
+                            <a href="/" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/" class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item cart">
+                           
+                            <a href="cart.html" class="nav-link ">
+                                <i class="fa-solid fa-basket-shopping" style="font-size: 2rem;"></i>
+                               
+                            </a>
+                            <p class="cart-count">1</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </nav>
+    <!--  end navigation bar -->
+    <section class="cart mt-4">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="cart-items">
+                    <table>
+                        <tr>
+                             <td style="width: 150px;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbjkelCpp0oPDupRrBUWq3-qUt4HmyYcrNg&usqp=CAU" alt="" style="width:50px;border-radius:50%">
+                             </td>
+                             <td style="width: 150px;">
+                                    <span>Test</span>
+                             </td>
+                             <td  style="width: 150px;">
+                                    <div>
+                                        <button class="btn" style="border-radius: 4px !important;margin-right: .4rem;">-</button>
+                                        <span class="margin:0px 4rem;">1</span>
+                                        <button class="btn" style="border-radius: 4px !important; margin-left: .4rem;">+</button>
+                                    </div>
+                             </td>
+                             <td style="width: 150px;">
+                                <span style="color: #575151;">12000 (MMK)</span>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td style="width: 150px;">
+                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbjkelCpp0oPDupRrBUWq3-qUt4HmyYcrNg&usqp=CAU" alt="" style="width:50px;border-radius:50%">
+                            </td>
+                            <td style="width: 150px;">
+                                   <span>Test</span>
+                            </td>
+                            <td  style="width: 150px;">
+                                   <div>
+                                       <button class="btn" style="border-radius: 4px !important;margin-right: .4rem;">-</button>
+                                       <span class="margin:0px 4rem;">1</span>
+                                       <button class="btn" style="border-radius: 4px !important; margin-left: .4rem;">+</button>
+                                   </div>
+                            </td>
+                            <td style="width: 150px;">
+                               <span style="color: #575151;">12000 (MMK)</span>
+                           </td>
+                           <td>
+                               <button class="btn btn-danger">
+                                   <i class="fa-solid fa-trash"></i>
+                               </button>
+                           </td>
+
+                       </tr>
+                       <tr>
+                        <td style="width: 150px;">
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbjkelCpp0oPDupRrBUWq3-qUt4HmyYcrNg&usqp=CAU" alt="" style="width:50px;border-radius:50%">
+                        </td>
+                        <td style="width: 150px;">
+                               <span>Test</span>
+                        </td>
+                        <td  style="width: 150px;">
+                               <div>
+                                   <button class="btn" style="border-radius: 4px !important;margin-right: .4rem;">-</button>
+                                   <span class="margin:0px 4rem;">1</span>
+                                   <button class="btn" style="border-radius: 4px !important; margin-left: .4rem;">+</button>
+                               </div>
+                        </td>
+                        <td style="width: 150px;">
+                           <span style="color: #575151;">12000 (MMK)</span>
+                       </td>
+                       <td>
+                           <button class="btn btn-danger">
+                               <i class="fa-solid fa-trash"></i>
+                           </button>
+                       </td>
+
+                     </tr>
+                    </table>
+                </div>
+                <div>
+                    <div class="card" style="padding: 2rem 1rem;">
+                        <p>Total Amount: <span style="color:green">120000(MMK)</span></p>
+                        <button class="btn btn-block btn-primary mt-2">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+  
+   <footer>
+    <div class="container">
+        <div class="text-center p-4">
+            <p>All right reserved Devloped By <a href="team.html" >Group 3</a></p>
+        </div>
+        
+    </div>
+   </footer> 
+</body>
+</html>
