@@ -30,6 +30,9 @@ li{
 .w-30{
     width: 30%;
 }
+.w-50{
+    width: 50%;
+}
 .w-70{
     width: 70%;
 }
@@ -58,6 +61,9 @@ section{
 .align-items-center{
     align-items: center;
 }
+.align-items-top{
+    align-items: flex-start;
+}
 .container{
     width: 90%;
     margin: 0px auto;
@@ -74,6 +80,9 @@ section{
 .mt-3{
     margin-top: 30px;
 }
+.mt-4{
+    margin-top: 40px;
+}
 .mt-2{
     margin-top: 20px;
 }
@@ -86,9 +95,16 @@ section{
     border-radius: 10px;
     cursor: pointer;
 }
+.btn-block{
+    width: 100%;
+}
 .btn-sm{
     transition: all .5s;
     padding: .5rem .4rem !important;
+}
+.btn.btn-danger{
+    background-color: crimson;
+    color: #fff;
 }
 .btn.btn-primary{
     background-color: #efc571;
@@ -124,6 +140,18 @@ nav .logo{
     width: 60px;
     height: 60px;
 }
+nav .cart{
+    position: relative;
+
+}
+nav .cart .cart-count{
+    position: absolute;
+    top: -20px;
+    right: -12px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: .2rem .5rem;
+}
 li.nav-item{
     list-style: none;
     display: inline;
@@ -142,9 +170,17 @@ li.nav-item .nav-link.active{
 /* //banner */
 .banner{
     /* background-color: #e6c073; */
-    background-image: url("https://wallpapercave.com/wp/wp3265995.jpg");
-    height: 100vh;
-    background-position: center;
+    background-image: url("./images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner button{
+    position: absolute;
+    right: 135px;
+    bottom: 113px;
+    padding: 1.2rem;
+    width: 232px;
 }
 .banner img{
     width: 300px;
@@ -163,7 +199,7 @@ li.nav-item .nav-link.active{
 
 /* feature-products */
 .feature-products{
-    background-color: #eda61a;
+    /* background-color: #eda61a; */
     height: 100vh;
     padding: 1rem;
 }
