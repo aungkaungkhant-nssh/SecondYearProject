@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Square+Peg&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -38,7 +39,7 @@ li{
 }
 nav{
     width: 100%;
-    background-color: #efc571;
+    background-color: #192b3e;
     box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
     position: sticky;
     top:0;
@@ -100,14 +101,14 @@ section{
 }
 .btn-sm{
     transition: all .5s;
-    padding: .5rem .4rem !important;
+    padding: .5rem .6rem !important;
 }
 .btn.btn-danger{
     background-color: crimson;
     color: #fff;
 }
 .btn.btn-primary{
-    background-color: #efc571;
+    background-color: #fb6340;
     color: #fff;
     transition: all .5s;
 }
@@ -137,8 +138,12 @@ section{
 }
 /* navigation */
 nav .logo{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+nav .nav-container{
+    padding: .5rem;
 }
 nav .cart{
     position: relative;
@@ -148,19 +153,20 @@ nav .cart .cart-count{
     position: absolute;
     top: -20px;
     right: -12px;
-    background-color: #fff;
+    background-color: #fb6340;
     border-radius: 50%;
-    padding: .2rem .5rem;
+    padding: .2rem .3rem;
+    color:#fff;
 }
 li.nav-item{
     list-style: none;
     display: inline;
-    margin-left: .8rem;
+    margin-left: 1rem;
 
 }
 li.nav-item .nav-link{
-    color: #020101;
-    font-size: 1.15rem;
+    color: #ffffff;
+    font-size: 0.9rem;
 }
 li.nav-item .nav-link.active{
     border-bottom: 2px solid #f5f5f5;
@@ -170,23 +176,33 @@ li.nav-item .nav-link.active{
 /* //banner */
 .banner{
     /* background-color: #e6c073; */
-    background-image: url("./images/banner.jpg");
+    background-image: url("https://rondiplomatico.com/wp-content/themes/rondiplomatico/dist/images/homeSection1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.banner button{
+.banner .text-container{
     position: absolute;
-    right: 135px;
-    bottom: 113px;
-    padding: 1.2rem;
-    width: 232px;
+    right: 50px;
+    bottom: 200px;
+    width: 400px;
+    color: #fff;
+}
+.banner .text-container p{
+    font-weight: normal;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem !important;
+    font-family: 'Square Peg', cursive;
+}
+.banner .text-center h3{
+    
+}
+.banner button{
+    
 }
 .banner img{
-    width: 300px;
-    height: 247px;
-    border-radius: 50%;
-    margin-right: 100px;
+   
 }
 .liquor-title{
     font-weight: 400;
@@ -199,7 +215,7 @@ li.nav-item .nav-link.active{
 
 /* feature-products */
 .feature-products{
-    /* background-color: #eda61a; */
+   
     height: 100vh;
     padding: 1rem;
 }
@@ -217,5 +233,6 @@ li.nav-item .nav-link.active{
 }
 /* footer */
 footer{
-    background-color: #efc571;
+    background-color: #192b3e;
+    color:#c6d3e7;
 }

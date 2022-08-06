@@ -1,0 +1,22 @@
+.carts{
+    background-color: #0f2031;
+    padding-top: 5rem;
+}
+.carts .product-name{
+    color: #c6d3e7;
+}
+.carts .price{
+    color: #c6d3e7;
+}
+.carts .increase{
+    border-radius: 5px;
+    background-color: #2dce89;
+    color: #fff;
+    margin-left: .8rem;
+}
+.carts .decrease{
+    background-color: #5e72e4;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: .8rem;
+}
