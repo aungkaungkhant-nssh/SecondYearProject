@@ -1,22 +1,28 @@
 .shop{
 
 }
+.categories{
+    background-color: #192b3e;
+}
 .shop .card{
-    transition: all .5s;
+    background-color: #192b3e;
+    color:#ffffff;
 }
 .shop .card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     cursor: pointer;
 }
 .shop .product-lists{
-    background-color: #eda61a;
+    background-color: #0f2031;
     width: 100%;
     height: 100%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
 }
 .shop .product-lists .card{
     width: 14rem;
     margin-right: 10px;
     margin-bottom: 1rem;
+    color:#c6d3e7;
 }
 .shop .product-lists-container{
     height: 530px;
@@ -32,17 +38,22 @@
     padding: 2.5rem;
 }
 .shop .categories ul li{
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     cursor: pointer;
-    
-    color: #a19d9d;
-    text-align: center;
-
+    transition: all .3s;
+}
+.shop .categories ul li a{
+    color:#fff;
+}
+.shop .categories ul li:hover{
+    transform: translateX(10px);
+}
+.shop .categories ul li a i{
+    margin-right: 10px;
 }
 .shop .categories ul li.active{
-    padding: .5rem 1rem;
-    border-radius: 20px;
     color: #fff;
-    background-color: #ccc;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid #eaeaea;
     box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
 }

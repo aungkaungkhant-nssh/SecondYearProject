@@ -1,7 +1,12 @@
 .details{
-
+    background-color: #0f2031;
+    padding-top: 5rem;
 }
 .detail{
     width: 55%;
     margin: 0px auto;
+}
+.detail .card{
+    background-color: #192b3e;
+    color:#ffffff;
 }
