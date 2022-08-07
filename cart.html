@@ -16,7 +16,7 @@
         <div class="container nav-container">
             <div class="d-flex justify-content-between align-items-center p-3">
                 <div>
-                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/297248789_586958533021863_290950496783078543_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ablu9hwz55EAX_TpNe3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJZXoyeip3Km_CGWtJYQOY3NWsJCIENAgEqFtp77L0sGg&oe=631414CD" alt="" class="logo">
+                    
                 </div>
                 <div>
                     <ul>
@@ -51,7 +51,7 @@
                                 <i class="fa-solid fa-basket-shopping" style="font-size: 1rem;"></i>
                                
                             </a>
-                            <p class="cart-count">1</p>
+                            <p></p>
                         </li>   
                     </ul>
                 </div>
@@ -65,60 +65,12 @@
                 <div class="cart-items">
                     <table>
                        
-                       <tr>
-                        <td style="width: 150px;">
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbjkelCpp0oPDupRrBUWq3-qUt4HmyYcrNg&usqp=CAU" alt="" style="width:50px;">
-                        </td>
-                        <td style="width: 150px;">
-                               <span class="product-name">Test</span>
-                        </td>
-                        <td  style="width: 150px;">
-                               <div>
-                                   <button class="btn decrease">-</button>
-                                   <span style="color: #c6d3e7;">1</span>
-                                   <button class="btn increase">+</button>
-                               </div>
-                        </td>
-                        <td style="width: 150px;">
-                           <span class="price">12000 (MMK)</span>
-                       </td>
-                       <td>
-                           <button class="btn btn-danger">
-                               <i class="fa-solid fa-trash"></i>
-                           </button>
-                       </td>
-
-                      </tr>
-                      <tr>
-                        <td style="width: 150px;">
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNbjkelCpp0oPDupRrBUWq3-qUt4HmyYcrNg&usqp=CAU" alt="" style="width:50px;">
-                        </td>
-                        <td style="width: 150px;">
-                               <span class="product-name">Test</span>
-                        </td>
-                        <td  style="width: 150px;">
-                               <div>
-                                   <button class="btn decrease">-</button>
-                                   <span style="color: #c6d3e7;">1</span>
-                                   <button class="btn increase">+</button>
-                               </div>
-                        </td>
-                        <td style="width: 150px;">
-                           <span class="price">12000 (MMK)</span>
-                       </td>
-                       <td>
-                           <button class="btn btn-danger">
-                               <i class="fa-solid fa-trash"></i>
-                           </button>
-                       </td>
-
-                      </tr>
                     </table>
                 </div>
                 <div>
                     <div class="card" style="padding: 2rem 1rem;">
-                        <p>Total Amount: <span style="color:green">120000(MMK)</span></p>
-                        <button class="btn btn-block btn-primary mt-2">Order</button>
+                        <p class="total-amount">Total Amount: <span style="color:green">120000(MMK)</span></p>
+                        <button class="btn btn-block btn-primary mt-2 order">Order</button>
                     </div>
                 </div>
             </div>
@@ -133,6 +85,11 @@
         </div>
         
     </div>
-   </footer> 
+   </footer>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+  <script src="./app.js"></script>
+  <script src="./cart.js"></script>
+  
+
 </body>
 </html>
