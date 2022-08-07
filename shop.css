@@ -42,18 +42,18 @@
     cursor: pointer;
     transition: all .3s;
 }
-.shop .categories ul li a{
-    color:#fff;
+.shop .categories ul li {
+    color:#fff ;
 }
 .shop .categories ul li:hover{
-    transform: translateX(10px);
+    color: #fb6340;
 }
-.shop .categories ul li a i{
+.shop .categories ul li i{
     margin-right: 10px;
 }
 .shop .categories ul li.active{
     color: #fff;
-    padding-bottom: .4rem;
-    border-bottom: 1px solid #eaeaea;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #eaeaea;
     box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
 }
