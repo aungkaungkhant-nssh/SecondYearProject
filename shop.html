@@ -4,67 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Liquor System </title>
+
+    <link rel = "icon" href = 
+    "./images/logo.jpeg" 
+            type = "image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    <!--  start navigation bar -->
-    <nav>
-        <div class="container nav-container">
-            <div class="d-flex justify-content-between align-items-center p-3">
-                <div>
-                    <!-- <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/297248789_586958533021863_290950496783078543_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ablu9hwz55EAX_TpNe3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJZXoyeip3Km_CGWtJYQOY3NWsJCIENAgEqFtp77L0sGg&oe=631414CD" alt="" class="logo"> -->
-                </div>
-                <div>
-                    <ul>
-                        <li  class="nav-item">
+        <!--  start navigation bar -->
+        <nav>
+            <div class="container nav-container">
+                <div class="d-flex justify-content-between align-items-center p-3">
+                    <div>
+                        <img src="./images/logo.jpeg" alt="" class="logo">
+                    </div>
+                    <div>
+                        <ul>
+                            <li  class="nav-item">
+                                
+                                <a href="/" class="nav-link">
+                                    <i class="fa-solid fa-house"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="shop.html" class="nav-link  active">
+                                    <i class="fa-solid fa-store"></i>
+                                    Shop
+                                </a>
+                            </li>
+                            <li class="nav-item contact-nav"> 
+                                <a href="contact.html" class="nav-link">
+                                    <i class="fa-solid fa-address-book"></i>
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item userInfo-nav ">
+                                
+                            </li>
+                            <li class="nav-item login-nav"> 
+                                <a href="login.html" class="nav-link login">Login</a>
+                            </li>
+                            <li class="nav-item register-nav"> 
+                                <a href="register.html" class="nav-link register">Register</a>
+                            </li>
+                            <li class="nav-item cart">
+                                <a href="cart.html" class="nav-link ">
+                                    <i class="fa-solid fa-basket-shopping" style="font-size: 1rem;"></i>
+                                
+                                </a>
+                                <p class=""></p>
+                            </li>
                             
-                            <a href="/" class="nav-link">
-                                <i class="fa-solid fa-house"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="shop.html" class="nav-link  active">
-                                <i class="fa-solid fa-store"></i>
-                                Shop
-                            </a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a href="/" class="nav-link">
-                                <i class="fa-solid fa-address-book"></i>
-                                Contact
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item"> 
-                            <a href="/" class="nav-link">Login</a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a href="/" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item cart">
-                            <a href="cart.html" class="nav-link ">
-                                <i class="fa-solid fa-basket-shopping" style="font-size: 1rem;"></i>
-                            </a>
-
-                            <p class=""></p>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-       
-    </nav>
-    <!--  end navigation bar -->
+                <button class="logout">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            </div> 
+        
+        </nav>
+        <!--  end navigation bar -->
   
    <section class="shop">
         <div class="">
             <div class="d-flex  justify-content-between" style="height:100vh">
                 <div class="categories w-20">
-                    <ul>
+                    <ul class="animate__animated animate__fadeInDown">
                         <li class="active select-category" data-category="all">
                                 <i class="fa-solid fa-border-all"></i>
                                 All
@@ -108,9 +120,8 @@
         
     </div>
    </footer> 
-   <h1 class="hello">Hello</h1>
-   <button class="click">click</button>
    <script src="./app.js"></script>
+   
    <script src="./shop.js"></script>
 </body>
 </html>

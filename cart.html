@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Liquor System </title>
+
+    <link rel = "icon" href = 
+    "./images/logo.jpeg" 
+            type = "image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./detail.css">
     <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!--  start navigation bar -->
+      <!--  start navigation bar -->
     <nav>
         <div class="container nav-container">
             <div class="d-flex justify-content-between align-items-center p-3">
                 <div>
-                    
+                    <img src="./images/logo.jpeg" alt="" class="logo">
                 </div>
                 <div>
                     <ul>
@@ -33,43 +37,46 @@
                                 Shop
                             </a>
                         </li>
-                        <li class="nav-item"> 
+                        <li class="nav-item contact-nav"> 
                             <a href="/" class="nav-link">
                                 <i class="fa-solid fa-address-book"></i>
                                 Contact
                             </a>
                         </li>
-                        
-                        <li class="nav-item"> 
-                            <a href="/" class="nav-link">Login</a>
+                        <li class="nav-item userInfo-nav ">
+                            
                         </li>
-                        <li class="nav-item"> 
-                            <a href="/" class="nav-link">Register</a>
+                        <li class="nav-item login-nav"> 
+                            <a href="login.html" class="nav-link login">Login</a>
+                        </li>
+                        <li class="nav-item register-nav"> 
+                            <a href="register.html" class="nav-link register">Register</a>
                         </li>
                         <li class="nav-item cart">
-                            <a href="cart.html" class="nav-link active">
+                            <a href="cart.html" class="nav-link ">
                                 <i class="fa-solid fa-basket-shopping" style="font-size: 1rem;"></i>
                                
                             </a>
-                            <p></p>
-                        </li>   
+                            <p class=""></p>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
+            <button class="logout">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
         </div> 
+     
     </nav>
     <!--  end navigation bar -->
     <section class="carts">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between carts-container">
                 <div class="cart-items">
-                    <table>
-                       
-                    </table>
+                   
                 </div>
                 <div>
-                    <div class="card" style="padding: 2rem 1rem;">
-                        <p class="total-amount">Total Amount: <span style="color:green">120000(MMK)</span></p>
+                    <div class="card" style="padding: 2rem 1rem;width:15rem;background-color: #fff !important;">
+                        <p class="total-amount">Total Amount: <span style="">120000(MMK)</span></p>
                         <button class="btn btn-block btn-primary mt-2 order">Order</button>
                     </div>
                 </div>

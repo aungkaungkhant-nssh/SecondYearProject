@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Liquor System </title>
-
     <link rel = "icon" href = 
     "./images/logo.jpeg" 
             type = "image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <!--  start navigation bar -->
-     <nav>
+      <!--  start navigation bar -->
+    <nav>
         <div class="container nav-container">
             <div class="d-flex justify-content-between align-items-center p-3">
                 <div>
@@ -50,7 +49,7 @@
                             
                         </li>
                         <li class="nav-item login-nav"> 
-                            <a href="login.html" class="nav-link login">Login</a>
+                            <a href="login.html" class="nav-link login active">Login</a>
                         </li>
                         <li class="nav-item register-nav"> 
                             <a href="register.html" class="nav-link register">Register</a>
@@ -71,17 +70,32 @@
      
     </nav>
     <!--  end navigation bar -->
-    <!-- detail -->
-    <section class="details" >
+    <section class="register">
         <div class="container">
-            <div class="detail">
-               
-              
+            <div class="card animate__animated animate__fadeInDown" style="padding: 2rem;width: 50%;margin: 0px auto;">
+                <h4 class="text-center" style="font-size: 2rem;margin-bottom:1rem;">Login Account</h4>
+                    <div class="incorrect">
+                        <div class="alert alert-danger" style="margin-bottom: .7rem;">
+                            Your Email Or Password incorrect
+                       </div>
+                    </div>
+                  
+                   <div class="form-group">
+                        <label for="">Enter Your Email</label>
+                        <input type="email" id="email">
+                        <div class="email-required"></div>
+                   </div>
+                   <div class="form-group">
+                        <label for="">Enter Your Password</label>
+                        <input type="password" id="pass">
+                        <div class="password-required"></div>
+                   </div>
+                   <button class="btn btn-primary btn-block" id="register">Login</button>
+                
             </div>
         </div>
     </section>
-    <!-- end detail -->
-   
+ 
    <footer>
     <div class="container">
         <div class="text-center p-4">
@@ -89,9 +103,10 @@
         </div>
         
     </div>
-   </footer>
-   <script src="./app.js"></script> 
-   <script src="./detail.js"></script>
+   </footer> 
+   <script src="./app.js"></script>
+   <script src="./login.js"></script>
    
 </body>
 </html>
+

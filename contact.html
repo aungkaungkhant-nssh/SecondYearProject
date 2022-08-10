@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!--  start navigation bar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <div>
+                    <!-- <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/297248789_586958533021863_290950496783078543_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ablu9hwz55EAX_TpNe3&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJZXoyeip3Km_CGWtJYQOY3NWsJCIENAgEqFtp77L0sGg&oe=631414CD" alt="" class="logo"> -->
+                </div>
+                <div>
+                    <ul>
+                        <li  class="nav-item">
+                            
+                            <a href="/" class="nav-link">
+                                <i class="fa-solid fa-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop.html" class="nav-link">
+                                <i class="fa-solid fa-store"></i>
+                                Shop
+                            </a>
+                        </li>
+                        <li class="nav-item contact-nav"> 
+                            <a href="contact.html" class="nav-link active">
+                                <i class="fa-solid fa-address-book"></i>
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item userInfo-nav ">
+                            
+                        </li>
+                        <li class="nav-item login-nav"> 
+                            <a href="login.html" class="nav-link login">Login</a>
+                        </li>
+                        <li class="nav-item register-nav"> 
+                            <a href="register.html" class="nav-link register">Register</a>
+                        </li>
+                        <li class="nav-item cart">
+                            <a href="cart.html" class="nav-link ">
+                                <i class="fa-solid fa-basket-shopping" style="font-size: 1rem;"></i>
+                            
+                            </a>
+                            <p class=""></p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <button class="logout">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div> 
+    
+    </nav>
+    <!--  end navigation bar -->
+   
+    <section class="contact">
+        <div class="container contact-box">
+            <div class="d-flex animate__animated animate__fadeInDown">
+                <div class="d-flex  justify-content-between card">
+                    
+                    <div class="contact-form">
+                        <h4 class="contact-title">Contact Us</h4>
+                        <form action="">
+                        
+                            <div class="inbox">
+                                <input type="text" required placeholder="Full Name">
+        
+                            </div>
+                             <div class="inbox">
+                                <input type="text" required placeholder="Email">
+                                
+                            </div> 
+                            <div class="inbox"> 
+                                <textarea required name="" cols="30" row="10" placeholder="Message"></textarea>
+                                      
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary mt-1">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="google-map" >
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=mynmar%20lashio%20computer%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed map google</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                </div>
+            </div>
+            <div class="contact-address d-flex justify-content-between text-center mt-2">
+                        <p><i class="fa-solid fa-house"></i><span style="display: block;padding-top: .5rem;">Address : Mehan</span></p>
+                        <p><i class="fa-solid fa-envelopes-bulk"></i><span style="display: block;padding-top: .5rem;">Email : onlinealcohol@gmail.com</span></p>
+                        <p><i class="fa-solid fa-phone"></i><span style="display: block;padding-top: .5rem;">Phone : +09101026888 </span></p>
+                        <p><i class="fa-solid fa-clock"></i><span style="display: block;padding-top: .5rem;">6 AM : 10 PM </span></p>
+            </div> 
+           
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="text-center p-4">
+                <p>All right reserved Devloped By <a href="team.html" >Group 3</a></p>
+            </div>
+            
+        </div>
+       </footer> 
+       <script src="./app.js"></script>
+</body>
+</html>
+<!-- https://google-map-generator.com/ -->

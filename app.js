@@ -141,11 +141,56 @@ let products = [
     },
 ]
 let cartTotalElement =   document.querySelector(".cart .nav-link").nextElementSibling;
-let cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+function getCartItems (){
+    return localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+}
+function getUsers (){
+    return localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
+}
 
-cartItems.length > 0 && cartTotalElement.classList.add('cart-count');
-cartTotalElement.innerHTML = cartItems.length;
+function userAuth (){
+    let loginUser=  localStorage.getItem("loginUser") ? JSON.parse(localStorage.getItem("loginUser")) : null;
+    if(loginUser){
+        document.querySelector(".login-nav").style.display = "none";
+        document.querySelector(".register-nav").style.display = "none";
+        document.querySelector(".userInfo-nav").style.display = "inline";
+        document.querySelector(".userInfo-nav").innerHTML = `
+            <span  class="nav-link" style="background-color:#5e72e4;padding:.3rem .3rem .3rem 1.3rem;cursor:pointer;border-radius:5px;" onclick="showLogout()">${loginUser.name}<i class="fa-solid fa-circle-chevron-down" style="margin-left:8px;"></i></span>
+        `
+    }else{
+        let cartTotalElement =   document.querySelector(".cart .nav-link").nextElementSibling;
+        cartTotalElement.classList.remove('cart-count');
+        cartTotalElement.innerHTML = "";
+        document.querySelector(".cart a").style.display = "none";
+        document.querySelector(".login-nav").style.display = "inline";
+        document.querySelector(".register-nav").style.display = "inline";
+        document.querySelector(".userInfo-nav").style.display = "none";
+        document.querySelector(".userInfo-nav").innerHTML = "";
+        document.querySelector('.logout').style.display="none"
+        
+    }
+    return loginUser;
+}
+let showLogoutBoolean = false;
+function showLogout (){
+    showLogoutBoolean = !showLogoutBoolean;
+    if(!showLogoutBoolean) document.querySelector('.logout').style.display="none";
+    else document.querySelector('.logout').style.display = "block"
+    // 
+}
 
-let arr = [0,1,2,3];
+// user Logout
+document.querySelector(".logout").addEventListener("click",()=>{
+    localStorage.removeItem("loginUser");
+    localStorage.removeItem("cartItems")
+    userAuth()
+})
+userAuth();
+if(getCartItems().length>0){
+    cartTotalElement.classList.add('cart-count');
+    cartTotalElement.innerHTML = getCartItems().length;
+}
+
+
 
 
