@@ -119,6 +119,24 @@ section{
     color: #000;
     background-color: #fff;
 }
+.alert{
+    padding: .5rem;
+}
+.alert.alert-danger{
+    background-color: #df5e5e;
+    color:#fff;
+    border-radius: 4px;
+    text-align: center  ;
+}
+input,textarea{
+    margin-top: .4rem;
+    width: 100%;
+    padding: .4rem;
+    border-radius: 15px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
 .section-title{
     font-weight: normal;
     border-bottom:1px solid #575151 ;
@@ -130,16 +148,19 @@ section{
     text-align: center;
 }
 .card{
-    background-color: white;
+    background-color:#192b3e;
     box-shadow: 0 1rem 1rem rgba(0,0,0,.075);
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
 }
 /* navigation */
+.nav-container{
+    position: relative;
+}
 nav .logo{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
 }
 nav .nav-container{
@@ -172,7 +193,25 @@ li.nav-item .nav-link.active{
     border-bottom: 2px solid #f5f5f5;
     padding-bottom:.6rem;
 }
-
+li.userBtn{
+    background-color: #5e72e4;
+    padding: .3rem .3rem .3rem 1.3rem;
+    border-radius: 3px;
+}
+.incorrect{
+    display: none;
+}
+.logout{
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    background-color: #fff;
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
 /* //banner */
 .banner{
     /* background-color: #e6c073; */
@@ -235,4 +274,7 @@ li.nav-item .nav-link.active{
 footer{
     background-color: #192b3e;
     color:#c6d3e7;
+}
+footer a{
+    color: #fb6340;
 }

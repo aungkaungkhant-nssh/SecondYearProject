@@ -19,9 +19,13 @@ categoriesButton.forEach((c)=>{
         })
         c.classList.add("active");
         let category  =e.target.getAttribute("data-category");
-        if(category === "all")return  productsContainer.innerHTML = renderProducts(products);
-        let filterProducts = products.filter((p)=>p.category === category);
-        productsContainer.innerHTML = renderProducts(filterProducts);
+        if(category === "all"){
+             productsContainer.innerHTML = renderProducts(products)
+        }else{
+            let filterProducts = products.filter((p)=>p.category === category);
+            productsContainer.innerHTML = renderProducts(filterProducts);
+        }
+        
         document.querySelectorAll('.details').forEach((d)=>{
             d.addEventListener("click",(e)=>{
                 let productName = e.target.getAttribute("data-name")    
@@ -35,6 +39,7 @@ categoriesButton.forEach((c)=>{
 let addToCartButton = document.querySelectorAll(".addToCart");
 addToCartButton.forEach((cartBtn)=>{
     cartBtn.addEventListener(("click"),(e)=>{
+        if(!userAuth()) return window.location.href = "login.html"
         let cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
         let c = [...cartItems];
         let id = e.target.getAttribute("data-id");
@@ -56,7 +61,7 @@ addToCartButton.forEach((cartBtn)=>{
 function renderProducts (data){
     return  data.map((product)=>(
           `
-         <div class="card text-center" >
+         <div class="card text-center animate__animated animate__fadeInLeft" >
              <img src="${product.image}" style="width:157px;height: 200px;border-radius:10px;">
              <div class="text-center mt-2">
                  <h4>${product.name}</h4>
