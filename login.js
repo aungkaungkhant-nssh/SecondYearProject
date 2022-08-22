@@ -16,7 +16,7 @@ document.getElementById("register").addEventListener("click",(e)=>{
         let hasUser = users.find((u)=> u.email === email.value && u.password === password.value );
         if(hasUser){
             localStorage.setItem("loginUser",JSON.stringify({name:hasUser.name,email:hasUser.email}));
-            history.back();
+            window.location.href = "shop.html"
         }else{
             document.querySelector(".incorrect").style.display ="block" ;
             document.querySelector(".email-required").innerHTML="";

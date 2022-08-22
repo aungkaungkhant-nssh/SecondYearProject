@@ -32,31 +32,34 @@ categoriesButton.forEach((c)=>{
                   window.location.href = `detail.html?name=${productName}`;
             })
         })
+        addCartItem();
     })
 })
 
 //add To Cart
-let addToCartButton = document.querySelectorAll(".addToCart");
-addToCartButton.forEach((cartBtn)=>{
-    cartBtn.addEventListener(("click"),(e)=>{
-        if(!userAuth()) return window.location.href = "login.html"
-        let cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
-        let c = [...cartItems];
-        let id = e.target.getAttribute("data-id");
-        let cart= products.find((p)=>p.id === Number(id));
-        let existItem= c.find((c)=> c.id === Number(id));
-        if(existItem){
-            existItem.qty+=1;
-        }else{
-            c.push({...cart,qty:1})
-        }
-        let cartTotalElement =   document.querySelector(".cart .nav-link").nextElementSibling;
-        cartTotalElement.classList.add('cart-count');
-        cartTotalElement.innerHTML = c.length;
-        localStorage.setItem("cartItems",JSON.stringify(c));
+function addCartItem(){
+    let addToCartButton = document.querySelectorAll(".addToCart");
+    addToCartButton.forEach((cartBtn)=>{
+        cartBtn.addEventListener(("click"),(e)=>{
+            if(!userAuth()) return window.location.href = "login.html"
+            let cartItems = localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [];
+            let c = [...cartItems];
+            let id = e.target.getAttribute("data-id");
+            let cart= products.find((p)=>p.id === Number(id));
+            let existItem= c.find((c)=> c.id === Number(id));
+            if(existItem){
+                existItem.qty+=1;
+            }else{
+                c.push({...cart,qty:1})
+            }
+            let cartTotalElement =   document.querySelector(".cart .nav-link").nextElementSibling;
+            cartTotalElement.classList.add('cart-count');
+            cartTotalElement.innerHTML = c.length;
+            localStorage.setItem("cartItems",JSON.stringify(c));
+        })
     })
-})
-
+}
+addCartItem()
 //render products to products Container
 function renderProducts (data){
     return  data.map((product)=>(
